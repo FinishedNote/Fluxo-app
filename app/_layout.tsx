@@ -1,6 +1,8 @@
 import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
+import { StatusBar } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import "./global.css";
 
 export default function RootLayout() {
@@ -24,5 +26,10 @@ export default function RootLayout() {
 
   if (!fontsLoaded) return null;
 
-  return <Stack />;
+  return (
+    <SafeAreaView className="flex-1 bg-background">
+      <StatusBar barStyle="dark-content" />
+      <Stack screenOptions={{ headerShown: false }} />
+    </SafeAreaView>
+  );
 }
