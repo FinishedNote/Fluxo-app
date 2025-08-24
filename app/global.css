@@ -16,6 +16,21 @@
 }
 
 @layer components {
+  .title {
+    @apply text-4xl font-inter-bold text-start text-white;
+  }
+  .subtitle {
+    @apply text-xl font-inter-medium text-start text-white;
+  }
+  .base {
+    @apply text-lg font-inter-medium text-start text-tintLight;
+  }
+  .iconBox {
+    @apply w-10 h-10 rounded-full bg-border flex-center;
+  }
+  .bigCard {
+    @apply w-48 h-40 bg-tint rounded-2xl border-border border p-4 mb-4;
+  }
   .label {
     @apply text-base text-start text-tintLight pl-2;
   }

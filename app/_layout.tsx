@@ -28,7 +28,7 @@ export default function RootLayout() {
 
   return (
     <SafeAreaView className="flex-1 bg-background">
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="light-content" />
       <Stack screenOptions={{ headerShown: false }} />
     </SafeAreaView>
   );
