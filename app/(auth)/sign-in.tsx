@@ -3,8 +3,8 @@ import { Text, View } from "react-native";
 
 export default function SignIn() {
   return (
-    <View>
-      <Text>Sign In</Text>
+    <View className="flex-1 flex-center bg-background">
+      <Text className="text-white">Sign In</Text>
     </View>
   );
 }
